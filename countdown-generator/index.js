@@ -126,10 +126,10 @@ module.exports = {
                 let seconds = Math.floor(timeResult.asSeconds()) - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
                 
                 // make sure we have at least 2 characters in the string
-                days = (days.toString().length == 1) ? '0' + days : days;
-                hours = (hours.toString().length == 1) ? '0' + hours : hours;
-                minutes = (minutes.toString().length == 1) ? '0' + minutes : minutes;
-                seconds = (seconds.toString().length == 1) ? '0' + seconds : seconds;
+                days = (days.toString().length === 1) ? '0' + days : days;
+                hours = (hours.toString().length === 1) ? '0' + hours : hours;
+                minutes = (minutes.toString().length === 1) ? '0' + minutes : minutes;
+                seconds = (seconds.toString().length === 1) ? '0' + seconds : seconds;
                 
                 // build the date string
                 let string = [days, 'd ', hours, 'h ', minutes, 'm ', seconds, 's'].join('');
